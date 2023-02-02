@@ -10,13 +10,14 @@ const Feed = () => {
 
   useEffect(() => {
     fetchFromApi(`search?part=snippet&q=${selectedCategory}`).then((data) => {
-      //   console.log(data.items);
+      /* console.log(data.items); */
       setVideos(data.items);
     });
   }, [selectedCategory]);
 
   return (
     <Stack sx={{ flexDirection: { sx: "column", md: "row" } }}>
+      {/* sidebar */}
       <Box
         sx={{
           height: { sx: "auto", md: "92vh" },
@@ -29,7 +30,7 @@ const Feed = () => {
           Copyright 2023 Gabriel
         </Typography>
       </Box>
-
+      {/* main video section */}
       <Box p={2} sx={{ overflowY: "auto", height: "90vh", flex: 2 }}>
         <Typography
           variant="h4"
