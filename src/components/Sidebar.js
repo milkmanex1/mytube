@@ -39,6 +39,8 @@ const Sidebar = ({ selectedCategory, setSelectedCategory }) => {
               style={{
                 opacity: category.name === selectedCategory ? "1" : "0.8",
                 marginRight: "15px",
+                width: "flex",
+                whiteSpace: "nowrap",
               }}
             >
               {category.name}
