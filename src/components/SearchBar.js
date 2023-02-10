@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Paper, IconButton } from "@mui/material";
 import { Search } from "@mui/icons-material";
+import Autocomplete from "./Autocomplete";
 
 const SearchBar = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -28,7 +29,7 @@ const SearchBar = () => {
         alignItems: "center",
       }}
     >
-      <input
+      {/* <input
         className="search-bar"
         placeholder="Search..."
         type="text"
@@ -36,7 +37,8 @@ const SearchBar = () => {
         onChange={(e) => {
           setSearchTerm(e.target.value);
         }}
-      />
+      /> */}
+      <Autocomplete></Autocomplete>
       <IconButton type="submit" sx={{ p: 2, color: "red" }}>
         <Search></Search>
       </IconButton>
