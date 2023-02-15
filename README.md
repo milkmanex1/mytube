@@ -7,4 +7,5 @@ Features include:
 - fully responsive custom css 
 - API call
 - ReactPlayer
+- Input to search for videos
 
